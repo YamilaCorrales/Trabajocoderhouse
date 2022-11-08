@@ -1,0 +1,229 @@
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+ /*I N D E X  */
+body{ 
+    font-family: "pacifico",serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer{
+    background-image: linear-gradient(to right, lightgreen, white, lightgreen, white, lightgreen, white);
+    background-color: lightgreen;
+    color: #405457;
+    max-height: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+
+header{
+    background-image: linear-gradient(to right,lightgreen, white, lightgreen, green, lightgreen, green);
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky ;
+    min-height: 100%;
+    min-width: 100%;
+    box-sizing: content-box;
+    z-index: 2000;
+    justify-content: space-between;
+
+}
+
+.titulo{
+
+    font-size: 50px;
+    font-family: "pacifico";
+    color: transparent;
+    background-color: green;
+    -webkit-background-clip: text;
+    }
+
+.menuli{
+    margin: 15px;
+    font-weight: bold;
+    font-size: 28px;
+    list-style-type: none;
+    }
+    
+.linkmenu{
+    text-decoration: none;
+    color: transparent;
+    background-color: white;
+    -webkit-background-clip: text;
+    font-family: "pacifico";
+    }
+
+
+.fondo{
+    background-color:lightgreen;
+    margin: 15px;
+    padding: 15px;
+    border:solid 2px lightgreen;
+    text-align: center;
+    font-size: 38px;
+    text-decoration: underline;
+    color: green;
+    margin-top: 30px;
+    font-family: "pacifico";
+}
+
+.centrar{
+    text-align: center;
+    color: green;
+    margin-top: 30px;
+
+}
+
+.productos {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos img {
+    width: 350px;
+    margin: auto;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.productos img:hover{
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+
+/* P R O D U C T O S  */
+
+.mini-titulo {
+    text-align: center;
+    color: green;
+    background-color: lightgreen;
+    padding: 15px;
+}
+
+.tabla {
+
+    border: groove lightgreen 100px;
+}
+
+.tabla h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: green;
+}
+
+.tabla td,
+th {
+    margin: 25px;
+    padding: 25px;
+}
+
+/* Q U I E N E S - S O M O S */
+.articulo-quienes-somos{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.flex-quienes-somos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-quienes-somos{
+width: 600px;
+}
+
+.producto4{
+    height: 600px;
+}
+
+
+.texto {
+    color: green;
+    width: 800px;
+    padding: 30px;
+}
+
+.texto h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+/* C O N T A C T O */
+
+.formulario {
+    background-color: rgb(91, 175, 91);
+    text-align: center;
+    margin: 20px;
+    font-size: 17px;
+    border: solid;
+    border-radius: 25px;
+}
+
+.formulario input {
+    margin: 15px;
+
+}
+
+.formulario textarea{
+    margin: 15px;
+}
+
+@media screen and (max-width: 990px ) {
+
+.formulario{
+}
+}
+/* C U E N T A */
+
+form {
+    width: 50%;
+    padding: 35px;
+    position: relative;
+    left: 25%;
+    top: 10%;
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+legend {
+    text-align: center;
+}
+
+/* GALERIA */
+.galeria .col-lg-4{
+    padding: 25px;
+    margin: 0;
+}
+
+
+.galeria img{
+    width: 100%;
+}
+
+.galeria figure{
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px;
+    cursor: pointer;
+    overflow: hidden;
+}
