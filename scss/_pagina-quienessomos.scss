@@ -1,0 +1,30 @@
+.articulo-quienes-somos{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.flex-quienes-somos{
+    @include flex;
+    align-items: center;
+}
+
+.imagen-quienes-somos{
+    width: 600px;
+    }
+
+    
+.producto4{
+    height: 600px;
+}
+
+.texto {
+    color: green;
+    width: 800px;
+    padding: 30px;
+    h2{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom:20px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,57 @@
+@mixin degradado{
+    background-image: linear-gradient(to right,lightgreen, white, lightgreen, green, lightgreen, green);
+}
+
+html{
+    height: 100%;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{ 
+    font-family: "pacifico",serif;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer{
+    @include degradado;
+    background-color: lightgreen;
+    color: #405457;
+    max-height: 100%;
+    margin-top: auto;
+    text-align: center;
+}
+
+header{
+    @include degradado;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky ;
+    min-height: 100%;
+    min-width: 100%;
+    box-sizing: content-box;
+    z-index: 2000;
+    justify-content: space-between;
+}
+
+li{
+    margin: 15px;
+    font-weight: bold;
+    font-size: 28px;
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: transparent;
+        background-color: white;
+        -webkit-background-clip: text;
+        font-family: "pacifico";
+        }
+    }

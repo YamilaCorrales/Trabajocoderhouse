@@ -18,7 +18,7 @@ body{
 }
 
 footer{
-    background-image: linear-gradient(to right, lightgreen, white, lightgreen, white, lightgreen, white);
+    background-image: linear-gradient(to right, lightgreen, white, lightgreen, white, lightgreen, green);
     background-color: lightgreen;
     color: #405457;
     max-height: 100%;
@@ -48,14 +48,14 @@ header{
     -webkit-background-clip: text;
     }
 
-.menuli{
+li{
     margin: 15px;
     font-weight: bold;
     font-size: 28px;
     list-style-type: none;
     }
     
-.linkmenu{
+li a{
     text-decoration: none;
     color: transparent;
     background-color: white;

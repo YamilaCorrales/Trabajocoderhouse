@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagenes/foto.png" type="image/x-icon">
     <title>Soy Magia Arte</title>
+    <meta name="description" content="Esta es la tienda online de SoyMagia Arte aqui podran ver nuestro catalogo desde mates y bombillas hasta bandejas para desayuno">
+    <meta name="keywords" content=" mate, venta, bombillas, bandejas, artesanal">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -54,36 +56,18 @@
 
     </header>
 
-    <form class="formulario">
-        <div class="form-group row">
-            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Nombre</label>
-            <div class="col-sm-10">
-                <input type="" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Juan">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Apellido</label>
-            <div class="col-sm-10">
-                <input type="" class="form-control form-control-lg" id="colFormLabelLg" placeholder="lopez">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
-            <div class="col-sm-10">
-                <input type="email" class="form-control form-control-lg" id="colFormLabelLg"
-                    placeholder="Juanlopez2001@gmail.com">
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Deja tu Mensaje</label>
-            <div class="col-sm-10">
-                <textarea cols="30" rows="5" type="" class="form-control form-control-lg" id="colFormLabelLg"
-                    placeholder="Juanlopez2001@gmail.com"></textarea>
-            </div>
+    <form>
+        <label for="nombreapellido">Nombre y Apellido:</label>
+        <th><input type="text" name="nombreapellido" required /></th>
 
-        </div>
-        <button class="btn btn-primary" type="submit">Enviar</button>
-    </form>
+        <label for="correo">Correo Electronico:</label>
+        <input type="email" name="correo" required />
+
+        <label for="Consulta">Deja tu mensaje:</label>
+        <textarea name="consulta" id="" cols="20" rows="10"></textarea>
+
+        <input type="submit" value="Enviar" />
+      </form>
 
 
 
