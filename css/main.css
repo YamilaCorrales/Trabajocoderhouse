@@ -10,7 +10,6 @@ html {
 }
 
 body {
-  font-family: "pacifico", serif;
   font-size: 22px;
   display: flex;
   flex-direction: column;
@@ -26,7 +25,7 @@ footer {
   text-align: center;
 }
 
-header {
+.header {
   background-image: linear-gradient(to right, lightgreen, white, lightgreen, green, lightgreen, green);
   display: flex;
   flex-wrap: wrap;
@@ -47,7 +46,7 @@ li {
 li a {
   text-decoration: none;
   color: transparent;
-  background-color: white;
+  background-color: rgb(23, 69, 7);
   -webkit-background-clip: text;
   font-family: "pacifico";
 }
@@ -58,6 +57,11 @@ li a {
   color: transparent;
   background-color: green;
   -webkit-background-clip: text;
+}
+
+.link-ul {
+  display: flex;
+  justify-content: end;
 }
 
 .fondo {
@@ -86,16 +90,26 @@ li a {
   justify-content: center;
 }
 .productos img {
-  width: 350px;
+  max-width: 300px;
   margin: auto;
   cursor: pointer;
   transition: 1s;
 }
 .productos img:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: 1s;
 }
 
+@media screen and (max-width: 768px) {
+  .productos img {
+    width: 350px;
+    margin: auto;
+  }
+  .productos img:hover {
+    transform: scale(1);
+    transition: 0s;
+  }
+}
 .mini-titulo {
   text-align: center;
   color: green;
@@ -118,7 +132,6 @@ li a {
 
 .articulo-quienes-somos {
   margin-top: 100px;
-  margin-left: 50px;
 }
 
 .flex-quienes-somos {
@@ -129,17 +142,16 @@ li a {
 }
 
 .imagen-quienes-somos {
-  width: 600px;
-}
-
-.producto4 {
-  height: 600px;
+  max-width: 500px;
 }
 
 .texto {
+  text-align: center;
   color: green;
-  width: 800px;
-  padding: 30px;
+  max-width: 800px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
 }
 .texto h2 {
   font-size: 50px;
@@ -148,6 +160,21 @@ li a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 425px) {
+  .texto h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .texto h2 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .texto h2 {
+    font-size: 40px;
+  }
+}
 .galeria .col-lg-4 {
   padding: 25px;
   margin: 0;
@@ -179,7 +206,8 @@ label {
   display: block;
 }
 
-input, textarea {
+input,
+textarea {
   margin-bottom: 20px;
   width: 100%;
   padding: 10px;

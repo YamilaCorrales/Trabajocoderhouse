@@ -1,27 +1,26 @@
-@mixin degradado{
-    background-image: linear-gradient(to right,lightgreen, white, lightgreen, green, lightgreen, green);
+@mixin degradado {
+    background-image: linear-gradient(to right, lightgreen, white, lightgreen, green, lightgreen, green);
 }
 
-html{
+html {
     height: 100%;
 }
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif
 }
 
-body{ 
-    font-family: "pacifico",serif;
+body {
     font-size: 22px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
 }
 
-footer{
+footer {
     @include degradado;
     background-color: lightgreen;
     color: #405457;
@@ -30,11 +29,11 @@ footer{
     text-align: center;
 }
 
-header{
+.header {
     @include degradado;
     display: flex;
     flex-wrap: wrap;
-    position: sticky ;
+    position: sticky;
     min-height: 100%;
     min-width: 100%;
     box-sizing: content-box;
@@ -42,16 +41,17 @@ header{
     justify-content: space-between;
 }
 
-li{
+li {
     margin: 15px;
     font-weight: bold;
     font-size: 28px;
     list-style-type: none;
-    a{
+
+    a {
         text-decoration: none;
         color: transparent;
-        background-color: white;
+        background-color: rgb(23, 69, 7);
         -webkit-background-clip: text;
         font-family: "pacifico";
-        }
     }
+}

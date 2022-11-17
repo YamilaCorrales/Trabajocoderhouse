@@ -1,4 +1,4 @@
-form{
+form {
     width: 50%;
     border: solid;
     border-radius: 25px;
@@ -10,50 +10,52 @@ form{
     background-color: rgb(91, 175, 91);
 }
 
-label{
+label {
     font-size: 18px;
     display: block;
 }
 
-input,textarea{
+input,
+textarea {
     margin-bottom: 20px;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    
+
 }
 
-textarea{
-    resize:vertical;
-    max-height:300px;
+textarea {
+    resize: vertical;
+    max-height: 300px;
     min-height: 100px;
 }
 
-input{
-    textarea{
-    &:focus{
-    border: 1px solid blue;
+input {
+    textarea {
+        &:focus {
+            border: 1px solid blue;
+        }
     }
 }
-}
 
-input[type=submit]{
+input[type=submit] {
     margin-bottom: 0;
     background-color: #1668c4;
-    color:black;
+    color: black;
     border: none;
-    &:hover{
-        background:#4a88f4 ;
+
+    &:hover {
+        background: #4a88f4;
         cursor: pointer;
     }
 }
 
 
-@media  screen and (max-width: 720px) {
-    form{
+@media screen and (max-width: 720px) {
+    form {
         width: 80%;
         position: relative;
         left: 5%;
     }
-    
+
 }
